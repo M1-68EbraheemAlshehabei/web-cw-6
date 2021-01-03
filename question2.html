@@ -19,9 +19,43 @@
       />
     </div>
     <div class="center">
-      <button onclick="">اختبر 🤓</button>
+      
+<!-- اجابة البونس -->
+      <p id="randomnumber"></p>
+
+      <button onclick="inputNum()">اختبر 🤓</button>
     </div>
+
     <script>
+
+        function inputNum(){
+
+          let givenNum =document.getElementById(`height`).value;
+          
+
+          if((givenNum % 2) == 0){
+            document.getElementById(`numberType`).innerText = `العدد الزوجي`
+            
+            console.log(givenNum)
+           } else {
+            document.getElementById(`numberType`).innerText = `العدد فردي`
+           }
+         }
+        //  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!هذا اجابة البونس
+
+
+      //    inputNum(givenNum);
+
+      //    function inputNum() {
+        
+      //     if((randomnumber % 2) == 0){
+      //     document.getElementById("randomnumber").innerHTML = `العدد الزوجي${Math.random()}`;
+      //   } else {
+      //     document.getElementById("randomnumber").innerHTML = `العدد فردي${Math.random()}`;
+      //   }
+      // }
+    
+     
       // قم بإنشاء الدالة هنا
       // numberType << idقم بإظهار النتيجة النهائية باستخدام ال
       // لا تنسى مناداة الدالة عند الضغط على الزر
